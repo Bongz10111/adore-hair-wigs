@@ -1,0 +1,415 @@
+/* About Adore Page Styles */
+.about-hero-section {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.min-vh-60 {
+  min-height: 60vh;
+}
+
+.about-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.about-hero-subtitle {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-hero-image {
+  position: relative;
+  text-align: center;
+}
+
+.about-hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.gold-sparkle {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #FFD700, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* Mission & Vision Sections */
+.mission-section {
+  background: #f8f9fa;
+}
+
+.mission-card, .vision-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border-left: 5px solid #FFD700;
+}
+
+.mission-card:hover, .vision-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.15);
+}
+
+.mission-icon, .vision-icon {
+  font-size: 3rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card .card-title, .vision-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mission-card .card-text, .vision-card .card-text {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Story Section */
+.story-section {
+  background: white;
+}
+
+.story-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.story-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.story-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.years-badge {
+  background: linear-gradient(45deg, #FFD700, #B8860B);
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+
+.years {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.story-content {
+  padding-left: 3rem;
+}
+
+.story-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #FFD700, #B8860B);
+  border-radius: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.4rem;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background: #FFD700;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #FFD700;
+}
+
+.timeline-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h5 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Values Section */
+.values-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.value-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: white;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.15);
+  border: 2px solid #FFD700;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.2);
+  color: #B8860B;
+}
+
+.value-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.value-card .card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+  background: white;
+}
+
+.founder-card {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.founder-image {
+  position: relative;
+  text-align: center;
+}
+
+.founder-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #FFD700;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+
+.founder-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  background: #FFD700;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.founder-info {
+  padding: 1rem;
+}
+
+.founder-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  font-size: 1.1rem;
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.founder-quote {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #FFD700;
+  padding-left: 1rem;
+}
+
+.founder-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.founder-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #FFD700;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.founder-social a:hover {
+  background: #B8860B;
+  transform: translateY(-3px);
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.stat-item {
+  padding: 2rem 1rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Shared Styles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 3rem;
+}
+
+.gold-glow {
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.gold-text {
+  background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldShine 3s ease-in-out infinite;
+}
+
+@keyframes goldShine {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .story-content {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  
+  .founder-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .founder-name {
+    font-size: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
